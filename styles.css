@@ -15,6 +15,7 @@ body {
     padding-top: 3%;
     border: 2px solid grey;
     border-radius: 5px;
+    max-width: 1230px;
 }
 
 #password-area {
@@ -44,4 +45,29 @@ body {
 
 #character-input input {
     text-align: center;
+}
+
+#password-area-container {
+    position: relative;
+}
+
+img {
+    height: 2em;
+    right: 3em;
+    top: 1px;
+    position: absolute;
+    margin-top: .5em;
+
+}
+
+@media (min-width: 1300px) {
+    img {
+        right: 10em;
+    }
+}
+
+@media (min-width: 900px) {
+    img {
+        right: 6em;
+    }
 }
