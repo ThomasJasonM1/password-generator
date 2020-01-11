@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <p id="password-area">Password Will Display Here!</p>
+            <div class="options-wrapper">
+                <div id="password-options">
+                    <label class="container">Special characters
+                        <input id="special" onclick="checkbox()" type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Numeric characters
+                        <input id="numeric" onclick="checkbox()" type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Lowercase characters
+                        <input id="lowercase" onclick="checkbox()" type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Uppercase characters
+                        <input id="uppercase" onclick="checkbox()" type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="slider">
+                    <p><strong>Password Length</strong></p>
+                    <span class="font-weight-bold indigo-text mr-2 mt-1">8</span>
+                    <form class="range-field w-25">
+                        <input id="slider-value" class="border-0" type="range" min="8" max="128" onchange="characterCountChanged(event)" />
+                    </form>
+                    <span class="font-weight-bold indigo-text ml-2 mt-1">128</span>
+                    <form id="character-input">
+                        <input id="character-field" type="text" name="character-value" value="64" onchange="characterCountChanged(event)">
+                    </form>
+                </div>
+            </div>
+            
+            <button onclick="submit()">Click Me</button>
+        </form>
+
+        
+
+    </div>
+
+    
+    
+</body>
+</html>

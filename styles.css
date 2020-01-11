@@ -1,0 +1,47 @@
+body {
+    background: lightgray;
+}
+
+.options-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper {
+    background: grey;
+    width: 80%;
+    margin: auto;
+    margin-top: 20%;
+    padding-top: 3%;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+#password-area {
+    background: white;
+    width: 61%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1em;
+    overflow-wrap: break-word;
+}
+
+#password-options {
+    margin-left: 18%;
+    width: 40%;
+}
+
+.slider {
+    text-align: center;
+}
+
+#character-input {
+    margin-top: 1.5em;
+}
+
+#character-input input {
+    text-align: center;
+}
