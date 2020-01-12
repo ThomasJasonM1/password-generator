@@ -1,5 +1,6 @@
 body {
     background: lightgray;
+    min-width: 293px;
 }
 
 .options-wrapper {
@@ -11,7 +12,7 @@ body {
     background: grey;
     width: 80%;
     margin: auto;
-    margin-top: 20%;
+    margin-top: 15%;
     padding-top: 3%;
     border: 2px solid grey;
     border-radius: 5px;
@@ -20,7 +21,7 @@ body {
 
 #password-area {
     background: white;
-    width: 61%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid white;
@@ -28,11 +29,6 @@ body {
     text-align: center;
     padding: 1em;
     overflow-wrap: break-word;
-}
-
-#password-options {
-    margin-left: 18%;
-    width: 40%;
 }
 
 .slider {
@@ -60,14 +56,11 @@ img {
 
 }
 
-@media (min-width: 1300px) {
-    img {
-        right: 10em;
-    }
-}
-
-@media (min-width: 900px) {
-    img {
-        right: 6em;
+@media (max-width: 767px) {
+    .slider {
+        background: cadetblue;
+        border: 2px solid cadetblue;
+        padding-bottom: 1em;
+        padding-top: .5em;
     }
 }

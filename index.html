@@ -13,43 +13,46 @@
     <div class="wrapper">
         <form action="">
             <div id="password-area-container">
-                <p id="password-area">Password Will Display Here!</p><span><img src="./copy_img.png" alt="Copy to Clipboard"></span>
-                
+                <p id="password-area">Password Will Display Here!</p>
+            </div>
+
+            <div class="container">
+                <div class="options-wrapper row">
+                    <div id="password-options" class="col-sm-12 col-md-6" align="center">
+                        <label class="container">Special characters
+                            <input id="special" onclick="checkbox()" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Numeric characters
+                            <input id="numeric" onclick="checkbox()" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Lowercase characters
+                            <input id="lowercase" onclick="checkbox()" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Uppercase characters
+                            <input id="uppercase" onclick="checkbox()" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="slider col-sm-12 col-md-6" align="center">
+                        <p><strong>Password Length</strong></p>
+                        <span class="font-weight-bold indigo-text mr-2 mt-1">8</span>
+                        <form class="range-field w-25">
+                            <input id="slider-value" class="border-0" type="range" min="8" max="128" onchange="characterCountChanged(event)" />
+                        </form>
+                        <span class="font-weight-bold indigo-text ml-2 mt-1">128</span>
+                        <form id="character-input">
+                            <input id="character-field" type="text" name="character-value" value="64" onchange="characterCountChanged(event)">
+                        </form>
+                    </div>
+                    <div id="submit" class="col-sm-12 text-center">
+                        <button class="btn my-3">Generate Password</button>
+                    </div>
+                </div>
             </div>
             
-            <div class="options-wrapper">
-                <div id="password-options">
-                    <label class="container">Special characters
-                        <input id="special" onclick="checkbox()" type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">Numeric characters
-                        <input id="numeric" onclick="checkbox()" type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">Lowercase characters
-                        <input id="lowercase" onclick="checkbox()" type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">Uppercase characters
-                        <input id="uppercase" onclick="checkbox()" type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="slider">
-                    <p><strong>Password Length</strong></p>
-                    <span class="font-weight-bold indigo-text mr-2 mt-1">8</span>
-                    <form class="range-field w-25">
-                        <input id="slider-value" class="border-0" type="range" min="8" max="128" onchange="characterCountChanged(event)" />
-                    </form>
-                    <span class="font-weight-bold indigo-text ml-2 mt-1">128</span>
-                    <form id="character-input">
-                        <input id="character-field" type="text" name="character-value" value="64" onchange="characterCountChanged(event)">
-                    </form>
-                </div>
-            </div>
-            
-            <button onclick="submit()">Click Me</button>
         </form>
 
         
